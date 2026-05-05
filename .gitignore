@@ -1,2 +1,1 @@
-# Ignore trained model artifacts
-finrl_deepseek_clean_rl/models/
+# (models are tracked)
