@@ -1,0 +1,53 @@
+\begin{tabular}{lllllrrrrrrrrr}
+\toprule
+scope & ticker_group & model & algorithm & feature_set & final_value & cumulative_return & annualized_return & annualized_volatility & sharpe & max_drawdown & calmar & avg_turnover & n_steps \\
+\midrule
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_GOOG & BuyHold & baseline & 1292450.9994 & 0.2925 & 0.4265 & 0.2762 & 1.4252 & -0.1291 & 3.3023 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & EqualWeight & EqualWeight & baseline & 1185899.4753 & 0.1859 & 0.2646 & 0.1769 & 1.4158 & -0.1023 & 2.5859 & 0.0000 & 184 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & PPO_price_only_MULTI_AMD_GOOG_KO_TSM_WMT & PPO & price_only & 1164880.8424 & 0.1649 & 0.2353 & 0.1668 & 1.3499 & -0.1158 & 2.0318 & 0.3172 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_AMD & BuyHold & baseline & 1428423.5496 & 0.4284 & 0.6384 & 0.4556 & 1.3099 & -0.2749 & 2.3219 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & A2C_price_only_MULTI_AMD_GOOG_KO_TSM_WMT & A2C & price_only & 1337359.3911 & 0.3374 & 0.4956 & 0.4384 & 1.1357 & -0.2884 & 1.7183 & 0.0590 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & A2C_llm_news_proxy_MULTI_AMD_GOOG_KO_TSM_WMT & A2C & llm_news_proxy & 1212422.4115 & 0.2124 & 0.3057 & 0.3314 & 0.9692 & -0.1762 & 1.7345 & 0.5512 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_TSM & BuyHold & baseline & 1141076.4700 & 0.1411 & 0.2005 & 0.2952 & 0.7634 & -0.2152 & 0.9314 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & PPO_sentiment_MULTI_AMD_GOOG_KO_TSM_WMT & PPO & sentiment & 1071448.7623 & 0.0714 & 0.1003 & 0.1572 & 0.6858 & -0.1263 & 0.7939 & 0.4105 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_WMT & BuyHold & baseline & 1055490.0472 & 0.0555 & 0.0776 & 0.1562 & 0.5581 & -0.1114 & 0.6967 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & PPO_llm_news_proxy_MULTI_AMD_GOOG_KO_TSM_WMT & PPO & llm_news_proxy & 1045972.1317 & 0.0460 & 0.0642 & 0.1698 & 0.4495 & -0.1208 & 0.5316 & 0.3604 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & A2C_sentiment_MULTI_AMD_GOOG_KO_TSM_WMT & A2C & sentiment & 991424.1204 & -0.0086 & -0.0119 & 0.2455 & 0.0728 & -0.2533 & -0.0468 & 0.5827 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_KO & BuyHold & baseline & 962347.2271 & -0.0377 & -0.0518 & 0.1290 & -0.3473 & -0.1854 & -0.2792 & 0.0000 & 183 \\
+single_stock & AMD & BuyHold_AMD & BuyHold & baseline & 2082549.3099 & 1.0825 & 1.0143 & 0.4685 & 1.7273 & -0.2749 & 3.6889 & 0.0000 & 265 \\
+single_stock & AMD & PPO_sentiment_AMD & PPO & sentiment & 1424522.8585 & 0.4245 & 0.4018 & 0.2691 & 1.3890 & -0.2222 & 1.8081 & 0.2371 & 265 \\
+single_stock & AMD & PPO_llm_news_proxy_AMD & PPO & llm_news_proxy & 1253483.6134 & 0.2535 & 0.2407 & 0.1718 & 1.3410 & -0.1535 & 1.5681 & 0.1403 & 265 \\
+single_stock & AMD & A2C_llm_news_proxy_AMD & A2C & llm_news_proxy & 1349431.4017 & 0.3494 & 0.3312 & 0.2337 & 1.3399 & -0.1312 & 2.5249 & 0.2727 & 265 \\
+single_stock & AMD & PPO_price_only_AMD & PPO & price_only & 1350019.6584 & 0.3500 & 0.3317 & 0.2347 & 1.3376 & -0.1451 & 2.2861 & 0.0884 & 265 \\
+single_stock & AMD & A2C_sentiment_AMD & A2C & sentiment & 1242549.8092 & 0.2425 & 0.2303 & 0.2563 & 0.9355 & -0.1251 & 1.8417 & 0.1495 & 265 \\
+single_stock & AMD & A2C_price_only_AMD & A2C & price_only & 1158640.5701 & 0.1586 & 0.1509 & 0.2503 & 0.6863 & -0.1307 & 1.1547 & 0.1390 & 265 \\
+single_stock & GOOG & A2C_sentiment_GOOG & A2C & sentiment & 1310222.0728 & 0.3102 & 0.4537 & 0.2449 & 1.6515 & -0.1207 & 3.7596 & 0.2916 & 183 \\
+single_stock & GOOG & A2C_price_only_GOOG & A2C & price_only & 1292608.9002 & 0.2926 & 0.4267 & 0.2668 & 1.4665 & -0.1183 & 3.6064 & 0.0149 & 183 \\
+single_stock & GOOG & BuyHold_GOOG & BuyHold & baseline & 1292450.9994 & 0.2925 & 0.4265 & 0.2762 & 1.4252 & -0.1291 & 3.3023 & 0.0000 & 183 \\
+single_stock & GOOG & PPO_sentiment_GOOG & PPO & sentiment & 1140533.2377 & 0.1405 & 0.1997 & 0.1834 & 1.0851 & -0.0996 & 2.0042 & 0.1053 & 183 \\
+single_stock & GOOG & PPO_llm_news_proxy_GOOG & PPO & llm_news_proxy & 1111519.7748 & 0.1115 & 0.1577 & 0.1902 & 0.8654 & -0.1035 & 1.5234 & 0.1054 & 183 \\
+single_stock & GOOG & A2C_llm_news_proxy_GOOG & A2C & llm_news_proxy & 1140877.6932 & 0.1409 & 0.2002 & 0.2492 & 0.8576 & -0.1374 & 1.4566 & 0.1101 & 183 \\
+single_stock & GOOG & PPO_price_only_GOOG & PPO & price_only & 1008709.4950 & 0.0087 & 0.0121 & 0.1601 & 0.1556 & -0.1158 & 0.1043 & 0.2548 & 183 \\
+single_stock & KO & BuyHold_KO & BuyHold & baseline & 1047365.6561 & 0.0474 & 0.0221 & 0.1708 & 0.2136 & -0.2089 & 0.1057 & 0.0000 & 535 \\
+single_stock & KO & A2C_price_only_KO & A2C & price_only & 998497.9790 & -0.0015 & -0.0007 & 0.0882 & 0.0361 & -0.1403 & -0.0051 & 0.0462 & 535 \\
+single_stock & KO & PPO_sentiment_KO & PPO & sentiment & 987986.9222 & -0.0120 & -0.0057 & 0.1216 & 0.0140 & -0.1561 & -0.0364 & 0.1073 & 535 \\
+single_stock & KO & A2C_llm_news_proxy_KO & A2C & llm_news_proxy & 977875.5096 & -0.0221 & -0.0105 & 0.1307 & -0.0152 & -0.2171 & -0.0484 & 0.1330 & 535 \\
+single_stock & KO & PPO_price_only_KO & PPO & price_only & 972620.5765 & -0.0274 & -0.0130 & 0.1255 & -0.0416 & -0.1905 & -0.0683 & 0.0945 & 535 \\
+single_stock & KO & PPO_llm_news_proxy_KO & PPO & llm_news_proxy & 962606.7481 & -0.0374 & -0.0178 & 0.1350 & -0.0654 & -0.2000 & -0.0891 & 0.0858 & 535 \\
+single_stock & KO & A2C_sentiment_KO & A2C & sentiment & 934599.2597 & -0.0654 & -0.0314 & 0.1472 & -0.1429 & -0.2489 & -0.1262 & 0.0787 & 535 \\
+single_stock & TSM & PPO_llm_news_proxy_TSM & PPO & llm_news_proxy & 999120.7023 & -0.0009 & -0.0004 & 0.2600 & 0.1269 & -0.4703 & -0.0009 & 0.1920 & 516 \\
+single_stock & TSM & A2C_llm_news_proxy_TSM & A2C & llm_news_proxy & 924977.3446 & -0.0750 & -0.0374 & 0.3372 & 0.0534 & -0.5471 & -0.0684 & 0.0563 & 516 \\
+single_stock & TSM & A2C_sentiment_TSM & A2C & sentiment & 912666.5830 & -0.0873 & -0.0437 & 0.3208 & 0.0188 & -0.5194 & -0.0842 & 0.2381 & 516 \\
+single_stock & TSM & BuyHold_TSM & BuyHold & baseline & 883508.4139 & -0.1165 & -0.0588 & 0.3574 & 0.0072 & -0.5714 & -0.1029 & 0.0000 & 516 \\
+single_stock & TSM & A2C_price_only_TSM & A2C & price_only & 896552.1374 & -0.1034 & -0.0520 & 0.2627 & -0.0735 & -0.3968 & -0.1311 & 0.3778 & 516 \\
+single_stock & TSM & PPO_sentiment_TSM & PPO & sentiment & 900562.5925 & -0.0994 & -0.0500 & 0.2536 & -0.0760 & -0.4528 & -0.1103 & 0.2235 & 516 \\
+single_stock & TSM & PPO_price_only_TSM & PPO & price_only & 867525.3155 & -0.1325 & -0.0672 & 0.2601 & -0.1380 & -0.4997 & -0.1344 & 0.2100 & 516 \\
+single_stock & WMT & PPO_sentiment_WMT & PPO & sentiment & 1031098.3425 & 0.0311 & 0.0417 & 0.0395 & 1.0528 & -0.0285 & 1.4628 & 0.0614 & 190 \\
+single_stock & WMT & BuyHold_WMT & BuyHold & baseline & 1100448.3621 & 0.1004 & 0.1361 & 0.1559 & 0.8979 & -0.1114 & 1.2215 & 0.0000 & 190 \\
+single_stock & WMT & A2C_llm_news_proxy_WMT & A2C & llm_news_proxy & 1070104.4682 & 0.0701 & 0.0945 & 0.1243 & 0.7901 & -0.0928 & 1.0185 & 0.0556 & 190 \\
+single_stock & WMT & A2C_price_only_WMT & A2C & price_only & 1015454.3344 & 0.0155 & 0.0207 & 0.0795 & 0.2973 & -0.0691 & 0.2989 & 0.1119 & 190 \\
+single_stock & WMT & A2C_sentiment_WMT & A2C & sentiment & 1014460.4283 & 0.0145 & 0.0193 & 0.1061 & 0.2342 & -0.1132 & 0.1707 & 0.1944 & 190 \\
+single_stock & WMT & PPO_price_only_WMT & PPO & price_only & 1008975.1974 & 0.0090 & 0.0120 & 0.0866 & 0.1811 & -0.0718 & 0.1670 & 0.0890 & 190 \\
+single_stock & WMT & PPO_llm_news_proxy_WMT & PPO & llm_news_proxy & 966077.8382 & -0.0339 & -0.0450 & 0.1161 & -0.3373 & -0.0988 & -0.4551 & 0.1312 & 190 \\
+\bottomrule
+\end{tabular}

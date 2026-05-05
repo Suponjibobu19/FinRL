@@ -1,0 +1,18 @@
+\begin{tabular}{lllllrrrrrrrrr}
+\toprule
+scope & ticker_group & model & algorithm & feature_set & final_value & cumulative_return & annualized_return & annualized_volatility & sharpe & max_drawdown & calmar & avg_turnover & n_steps \\
+\midrule
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_GOOG & BuyHold & baseline & 1292450.9994 & 0.2925 & 0.4265 & 0.2762 & 1.4252 & -0.1291 & 3.3023 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & EqualWeight & EqualWeight & baseline & 1185899.4753 & 0.1859 & 0.2646 & 0.1769 & 1.4158 & -0.1023 & 2.5859 & 0.0000 & 184 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & PPO_price_only_MULTI_AMD_GOOG_KO_TSM_WMT & PPO & price_only & 1164880.8424 & 0.1649 & 0.2353 & 0.1668 & 1.3499 & -0.1158 & 2.0318 & 0.3172 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_AMD & BuyHold & baseline & 1428423.5496 & 0.4284 & 0.6384 & 0.4556 & 1.3099 & -0.2749 & 2.3219 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & A2C_price_only_MULTI_AMD_GOOG_KO_TSM_WMT & A2C & price_only & 1337359.3911 & 0.3374 & 0.4956 & 0.4384 & 1.1357 & -0.2884 & 1.7183 & 0.0590 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & A2C_llm_news_proxy_MULTI_AMD_GOOG_KO_TSM_WMT & A2C & llm_news_proxy & 1212422.4115 & 0.2124 & 0.3057 & 0.3314 & 0.9692 & -0.1762 & 1.7345 & 0.5512 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_TSM & BuyHold & baseline & 1141076.4700 & 0.1411 & 0.2005 & 0.2952 & 0.7634 & -0.2152 & 0.9314 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & PPO_sentiment_MULTI_AMD_GOOG_KO_TSM_WMT & PPO & sentiment & 1071448.7623 & 0.0714 & 0.1003 & 0.1572 & 0.6858 & -0.1263 & 0.7939 & 0.4105 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_WMT & BuyHold & baseline & 1055490.0472 & 0.0555 & 0.0776 & 0.1562 & 0.5581 & -0.1114 & 0.6967 & 0.0000 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & PPO_llm_news_proxy_MULTI_AMD_GOOG_KO_TSM_WMT & PPO & llm_news_proxy & 1045972.1317 & 0.0460 & 0.0642 & 0.1698 & 0.4495 & -0.1208 & 0.5316 & 0.3604 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & A2C_sentiment_MULTI_AMD_GOOG_KO_TSM_WMT & A2C & sentiment & 991424.1204 & -0.0086 & -0.0119 & 0.2455 & 0.0728 & -0.2533 & -0.0468 & 0.5827 & 183 \\
+multi_stock & AMD,GOOG,KO,TSM,WMT & BuyHold_KO & BuyHold & baseline & 962347.2271 & -0.0377 & -0.0518 & 0.1290 & -0.3473 & -0.1854 & -0.2792 & 0.0000 & 183 \\
+\bottomrule
+\end{tabular}
